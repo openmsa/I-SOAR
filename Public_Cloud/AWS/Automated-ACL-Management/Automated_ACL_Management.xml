@@ -43,7 +43,7 @@
       </sections>
     </variable>
   </variables>  <example>    <content/>  </example>
-<process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize">
+<process name="Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize">
     <visibility>5</visibility>
     <displayName>initialize</displayName>
     <icon/>
@@ -55,15 +55,15 @@
   
     
   <task name="Task_select_ACL.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
       <displayName>select VPC</displayName>
     </task>
     <task name="Task_microservice_synchronization.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
       <displayName>microservice synchronization</displayName>
     </task>
   </process>
-<process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete">
+<process name="Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete">
     <visibility>5</visibility>
     <displayName>delete</displayName>
     <icon/>
@@ -73,7 +73,7 @@
     <type>DELETE</type>
   </process>
 
-<process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP">
+<process name="Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP">
     <visibility>5</visibility>
     <displayName>blacklist list of IP</displayName>
     <icon/>
@@ -83,23 +83,23 @@
     <type>UPDATE</type>
     
   <task name="Task_get_IP_from_URL.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>get IP from Database</displayName>
     </task>
     <task name="Task_delete_ACLs.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>clean up ALC</displayName>
     </task>
     <task name="Task_create_ACLs.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>create ACL</displayName>
     </task>
     <task name="Task_create_ACL_rules.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>blacklist IP</displayName>
     </task>
   </process>
-<process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules">
+<process name="Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules">
     <visibility>5</visibility>
     <displayName>cleanup ACL</displayName>
     <icon/>
@@ -110,7 +110,7 @@
     
   
   <task name="Task_delete_ACL_rules.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/OpenMSA/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules/Tasks/</processPath>
       <displayName>cleanup ACL</displayName>
     </task>
   </process>
