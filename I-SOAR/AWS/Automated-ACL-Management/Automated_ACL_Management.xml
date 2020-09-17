@@ -5,7 +5,7 @@
     <displayField>service_id</displayField>
     <executionDetailsVisibility>5</executionDetailsVisibility>
     <executionMode>TRANSACTION</executionMode>
-    <group>Public Cloud|AWS</group>
+    <group>Public Cloud|AWS|I-SOAR</group>
     <icon>/images/eclipseIcons/page_obj.gif</icon>
     <name>I-SOAR : Network Security Enforcement</name>
     <order>10000</order>
@@ -17,46 +17,34 @@
     <visibility>5</visibility>
   </information>  <variables frozen="0">
     <variable displayName="Aws Region" displayOrder="0" keepOnImport="true" maxLength="165" name="params.aws_region" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="Device">
-      <sections>
-        <section>select ACL</section>
-      </sections>
+    
       <sdTypes>
         <sdType manId="17010301" modId="17010301"/>
       </sdTypes>
     </variable>
     <variable displayName="Vpc Id" displayOrder="1" editable="false" isMandatory="true" maxLength="100" name="params.vpc_id" numberOfRowMax="0" refDeviceIdVar="params.aws_region" startIncrement="0" tableSizeFix="false" type="OBMFRef">
-      <sections>
-        <section>select ACL</section>
-      </sections>
+     
       <classes>
         <class>vpc</class>
       </classes>
     </variable>
     <variable displayName="Url Ip Provider" displayOrder="3" maxLength="100" name="params.url_IP_provider" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
       <values>
-        <value displayValue="http://localhost/demo/isoar/IP_list_2.txt">http://localhost/demo/isoar/IP_list_2.txt</value>
-        <value displayValue="http://localhost/demo/isoar/IP_list_1.txt">http://localhost/demo/isoar/IP_list_1.txt</value>
-        <value displayValue="http://localhost/demo/isoar/long_IP_list.txt">http://localhost/demo/isoar/long_IP_list.txt</value>
-        <value displayValue="http://localhost/demo/isoar/single_IP.txt">http://localhost/demo/isoar/single_IP.txt</value>
+        <value displayValue="http://10.31.1.20/demo/isoar/IP_list_2.txt">http://localhost/demo/isoar/IP_list_2.txt</value>
+        <value displayValue="http://10.31.1.20/demo/isoar/IP_list_1.txt">http://localhost/demo/isoar/IP_list_1.txt</value>
+        <value displayValue="http://10.31.1.20/demo/isoar/long_IP_list.txt">http://localhost/demo/isoar/long_IP_list.txt</value>
+        <value displayValue="http://10.31.1.20/demo/isoar/single_IP.txt">http://localhost/demo/isoar/single_IP.txt</value>
       </values>
-      <sections>
-        <section>select ACL</section>
-      </sections>
+     
     </variable>
     <variable default="10.31.1.168:8080" displayName="Ticketing Ip" displayOrder="7" maxLength="100" name="params.ticketing_ip" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
-      <sections>
-        <section>create ticket</section>
-      </sections>
+      
     </variable>
     <variable default="demo_user" displayName="Ticketing Login" displayOrder="8" maxLength="100" name="params.ticketing_login" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
-      <sections>
-        <section>create ticket</section>
-      </sections>
+     
     </variable>
     <variable default="demo_user" displayName="Ticketing Pwd" displayOrder="9" maxLength="100" name="params.ticketing_pwd" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
-      <sections>
-        <section>create ticket</section>
-      </sections>
+      
     </variable>
   </variables>  <example>    <content/>  </example>
 <process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize">
