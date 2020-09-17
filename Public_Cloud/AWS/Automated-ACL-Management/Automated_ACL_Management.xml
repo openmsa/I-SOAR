@@ -11,32 +11,33 @@
     <order>10000</order>
     <poolId>0</poolId>
     <readVariableVisibility>5</readVariableVisibility>
+    <serviceTaskType>php</serviceTaskType>
     <showDetailedServiceInstances>true</showDetailedServiceInstances>
     <showProcessExecConsole>false</showProcessExecConsole>
     <showVariables>true</showVariables>
     <visibility>5</visibility>
   </information>  <variables frozen="0">
-    <variable displayName="Aws Region" displayOrder="0" keepOnImport="true" maxLength="165" name="params.aws_region" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="Device">
-      <sections>
-        <section>select ACL</section>
-      </sections>
-      <sdTypes>
-        <sdType manId="17010301" modId="17010301"/>
-      </sdTypes>
-    </variable>
-    <variable displayName="Vpc Id" displayOrder="1" editable="false" isMandatory="true" maxLength="100" name="params.vpc_id" numberOfRowMax="0" refDeviceIdVar="params.aws_region" startIncrement="0" tableSizeFix="false" type="OBMFRef">
-      <sections>
-        <section>select ACL</section>
-      </sections>
-      <classes>
-        <class>vpc</class>
-      </classes>
-    </variable>
-    <variable displayName="Url Ip Provider" displayOrder="3" maxLength="100" name="params.url_IP_provider" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
+    <variable default="UBI188" displayName="Aws Region" displayOrder="0" editable="false" isMandatory="true" isUserLocked="true" keepOnImport="true" maxLength="165" name="params.aws_region" startIncrement="0" type="String">
       <values>
-        <value>http://localhost/demo/isoar/IP_list_2.txt</value>
-        <value>http://localhost/demo/isoar/IP_list_1.txt</value>
-        <value>http://localhost/demo/isoar/long_IP_list.txt</value>
+        <value displayValue="Public A-Cloud - ap-southeast-1 [Singapour]">UBI188</value>
+      </values>
+      <sections>
+        <section>select ACL</section>
+      </sections>
+    </variable>
+    <variable default="vpc-508ed237" displayName="Vpc Id" displayOrder="1" isMandatory="true" isUserLocked="true" maxLength="100" name="params.vpc_id" startIncrement="0" type="String">
+      <values>
+        <value displayValue="vpc-508ed237 - 172.31.0.0/16">vpc-508ed237</value>
+      </values>
+      <sections>
+        <section>select ACL</section>
+      </sections>
+    </variable>
+    <variable default="http://localhost/demo/isoar/IP_list_1.txt" displayName="Url Ip Provider" displayOrder="3" maxLength="100" name="params.url_IP_provider" startIncrement="0" type="String">
+      <values>
+        <value displayValue="http://localhost/demo/isoar/IP_list_2.txt">http://localhost/demo/isoar/IP_list_2.txt</value>
+        <value displayValue="http://localhost/demo/isoar/IP_list_1.txt">http://localhost/demo/isoar/IP_list_1.txt</value>
+        <value displayValue="http://localhost/demo/isoar/long_IP_list.txt">http://localhost/demo/isoar/long_IP_list.txt</value>
       </values>
       <sections>
         <section>select ACL</section>
@@ -79,7 +80,7 @@
     <icon/>
     <poolId>0</poolId>
     <compensation/>
-    <allowSchedule>false</allowSchedule>
+    <allowSchedule>true</allowSchedule>
     <type>UPDATE</type>
     
   <task name="Task_get_IP_from_URL.php">
