@@ -28,11 +28,11 @@
     <type>CREATE</type>
     <visibility>0</visibility>
     <task name="Task_select_ACL.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
       <displayName>select VPC</displayName>
     </task>
     <task name="Task_microservice_synchronization.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
       <displayName>microservice synchronization</displayName>
     </task>
   </process>
@@ -46,23 +46,23 @@
     <type>UPDATE</type>
     <visibility>0</visibility>
     <task name="Task_get_IP_from_URL.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>get IP from Database</displayName>
     </task>
     <task name="Task_delete_ACLs.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>clean up ACL</displayName>
     </task>
     <task name="Task_create_ACLs.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>create ACL</displayName>
     </task>
     <task name="Task_create_ACL_rules.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>blacklist IP</displayName>
     </task>
     <task name="Task_create_ticket.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>create ticket</displayName>
     </task>
   </process>
@@ -71,7 +71,7 @@
     <type>UPDATE</type>
     <visibility>0</visibility>
     <task name="Task_delete_ACL_rules.php">
-      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules/Tasks/</processPath>
+      <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules/Tasks/</processPath>
       <displayName>cleanup ACL</displayName>
     </task>
   </process>
