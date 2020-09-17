@@ -6,10 +6,20 @@ function list_args()
   create_var_def('url_IP_provider', 'String');
 }
 
+global $CURL_CMD;
+
 $ip_list_string = '';
+$previous_ip_list = '';
+$previous_ip_list_array = array();
+
+if(isset($context['ip_list_string'])){
+$previous_ip_list = $context['ip_list_string'];
+$previous_ip_list_array = explode(" ", $previous_ip_list);
+
+logToFile('previous IP list : ' . $previous_ip_list);
+}
 $context['ip_list_string'] = '';
 
-global $CURL_CMD;
 
 $url_IP_provider = $context['url_IP_provider'];
  
@@ -33,12 +43,37 @@ foreach($ip_list_array as $ip) {
 $ip_list_string = trim($ip_list_string);
 $context['ip_list_string'] = $ip_list_string;
 
+$list_of_new_ip = get_new_element($previous_ip_list_array, $ip_list_array);
+logToFile(debug_dump($list_of_new_ip, 'RESULT'));
 
-
-// for test when access to URL fails
- //$context['ip_list_string'] = "10.0.0.1 20.0.0.2 30.0.0.3 30.0.0.4 30.0.0.5 30.0.0.6 30.0.0.7 30.0.0.8 30.0.0.9 30.0.0.10 30.0.0.11 30.0.0.12 30.0.0.13 30.0.0.14 30.0.0.15 30.0.0.16 40.0.0.1 30.0.0.2 30.0.0.3 30.0.0.4 40.0.0.14 59.0.0.15 67.0.0.16 98.0.0.1 54.0.0.2 43.0.0.3 23.0.0.4";
-
+$list_of_new_ip_string = '';
+foreach($ip_list_array as $ip) {
+  $list_of_new_ip_string = $list_of_new_ip_string.' '.$ip;
+}
+$list_of_new_ip_string = trim($list_of_new_ip_string);
+$context['new_ip_list_string'] = $list_of_new_ip_string;
 
 task_success($ip_list_count . ' IP addresses to blacklist');
+
+
+
+
+/**
+* returns the array element that are in array2 but not in array1
+*/
+function get_new_element($array1, $array2) {
+
+  $result=array();
+  foreach($array2 as $ip) {
+    if (!in_array($ip, $array1)) {
+      array_push($result, $ip);
+    }
+  }
+
+  return $result;
+
+}
+
+
 
 ?>
