@@ -23,7 +23,7 @@
     <variable displayName="Ticketing Pwd" name="params.ticketing_pwd" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="9" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" default="demo_user" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
-  <process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize">
+  <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_initialize">
     <displayName>initialize</displayName>
     <type>CREATE</type>
     <visibility>0</visibility>
@@ -36,12 +36,12 @@
       <displayName>microservice synchronization</displayName>
     </task>
   </process>
-  <process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete">
+  <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_delete">
     <displayName>delete</displayName>
     <type>DELETE</type>
     <visibility>0</visibility>
   </process>
-  <process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP">
+  <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP">
     <displayName>blacklist list of IP</displayName>
     <type>UPDATE</type>
     <visibility>0</visibility>
@@ -66,7 +66,7 @@
       <displayName>create ticket</displayName>
     </task>
   </process>
-  <process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules">
+  <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules">
     <displayName>cleanup ACL</displayName>
     <type>UPDATE</type>
     <visibility>0</visibility>
