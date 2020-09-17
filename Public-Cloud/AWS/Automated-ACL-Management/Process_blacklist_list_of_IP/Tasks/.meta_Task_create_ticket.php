@@ -7,30 +7,23 @@
         </entry>
         <entry>
             <key>DATE_MODIFICATION</key>
-            <value>1570801950453</value>
+            <value>1574072473751</value>
         </entry>
         <entry>
             <key>COMMENT</key>
             <value></value>
         </entry>
         <entry>
-            <key>REPOSITORY</key>
-        </entry>
-        <entry>
             <key>DATE_CREATION</key>
-            <value>1564496943284</value>
+            <value>1573829708796</value>
         </entry>
         <entry>
-            <key>CONFIGURATION_FILTER</key>
+            <key>TAG</key>
             <value></value>
         </entry>
         <entry>
             <key>TYPE</key>
             <value>UPLOAD</value>
-        </entry>
-        <entry>
-            <key>TAG</key>
-            <value>IP_BW_List_Mngt.xml</value>
         </entry>
     </map>
 </metadata>

@@ -12,7 +12,7 @@
     <poolId>0</poolId>
     <readVariableVisibility>5</readVariableVisibility>
     <showDetailedServiceInstances>true</showDetailedServiceInstances>
-    <showProcessExecConsole>false</showProcessExecConsole>
+    <showProcessExecConsole>true</showProcessExecConsole>
     <showVariables>true</showVariables>
     <visibility>5</visibility>
   </information>  <variables frozen="0">
@@ -34,12 +34,28 @@
     </variable>
     <variable displayName="Url Ip Provider" displayOrder="3" maxLength="100" name="params.url_IP_provider" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
       <values>
-        <value>http://localhost/demo/isoar/IP_list_2.txt</value>
-        <value>http://localhost/demo/isoar/IP_list_1.txt</value>
-        <value>http://localhost/demo/isoar/long_IP_list.txt</value>
+        <value displayValue="http://localhost/demo/isoar/IP_list_2.txt">http://localhost/demo/isoar/IP_list_2.txt</value>
+        <value displayValue="http://localhost/demo/isoar/IP_list_1.txt">http://localhost/demo/isoar/IP_list_1.txt</value>
+        <value displayValue="http://localhost/demo/isoar/long_IP_list.txt">http://localhost/demo/isoar/long_IP_list.txt</value>
+        <value displayValue="http://localhost/demo/isoar/single_IP.txt">http://localhost/demo/isoar/single_IP.txt</value>
       </values>
       <sections>
         <section>select ACL</section>
+      </sections>
+    </variable>
+    <variable default="10.31.1.168:8080" displayName="Ticketing Ip" displayOrder="7" maxLength="100" name="params.ticketing_ip" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
+      <sections>
+        <section>create ticket</section>
+      </sections>
+    </variable>
+    <variable default="demo_user" displayName="Ticketing Login" displayOrder="8" maxLength="100" name="params.ticketing_login" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
+      <sections>
+        <section>create ticket</section>
+      </sections>
+    </variable>
+    <variable default="demo_user" displayName="Ticketing Pwd" displayOrder="9" maxLength="100" name="params.ticketing_pwd" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
+      <sections>
+        <section>create ticket</section>
       </sections>
     </variable>
   </variables>  <example>    <content/>  </example>
@@ -82,13 +98,21 @@
     <allowSchedule>false</allowSchedule>
     <type>UPDATE</type>
     
+  
+    
+    
+    
+  
+    
+    
+    
   <task name="Task_get_IP_from_URL.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>get IP from Database</displayName>
     </task>
     <task name="Task_delete_ACLs.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
-      <displayName>clean up ALC</displayName>
+      <displayName>clean up ACL</displayName>
     </task>
     <task name="Task_create_ACLs.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
@@ -97,6 +121,10 @@
     <task name="Task_create_ACL_rules.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>blacklist IP</displayName>
+    </task>
+    <task name="Task_create_ticket.php">
+      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
+      <displayName>create ticket</displayName>
     </task>
   </process>
 <process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules">
