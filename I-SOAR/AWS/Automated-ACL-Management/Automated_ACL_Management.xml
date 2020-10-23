@@ -26,7 +26,7 @@
   <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_initialize">
     <displayName>initialize</displayName>
     <type>CREATE</type>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <task name="Task_select_ACL.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
       <displayName>select VPC</displayName>
@@ -39,12 +39,12 @@
   <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_delete">
     <displayName>delete</displayName>
     <type>DELETE</type>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
   </process>
   <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP">
     <displayName>blacklist list of IP</displayName>
     <type>UPDATE</type>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <task name="Task_get_IP_from_URL.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_blacklist_list_of_IP/Tasks/</processPath>
       <displayName>get IP from Database</displayName>
@@ -69,7 +69,7 @@
   <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules">
     <displayName>cleanup ACL</displayName>
     <type>UPDATE</type>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <task name="Task_delete_ACL_rules.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/AWS/Automated-ACL-Management/Process_delete_all_ACL_rules/Tasks/</processPath>
       <displayName>cleanup ACL</displayName>
@@ -81,7 +81,7 @@
     <displayField>service_id</displayField>
     <serviceTaskType>php</serviceTaskType>
     <order>10000</order>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <name>I-SOAR : Network Security Enforcement</name>
     <group>Public Cloud|AWS|I-SOAR</group>
   </information>
