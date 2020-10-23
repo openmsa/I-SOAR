@@ -3,11 +3,7 @@
     <map>
         <entry>
             <key>DATE_MODIFICATION</key>
-<<<<<<< HEAD
-            <value>1603454127990</value>
-=======
-            <value>1600368864899</value>
->>>>>>> 2.2.0GA
+            <value>1578931972175</value>
         </entry>
         <entry>
             <key>REPOSITORY</key>
@@ -15,30 +11,18 @@
         </entry>
         <entry>
             <key>DATE_CREATION</key>
-<<<<<<< HEAD
-            <value>1603454127985</value>
-=======
-            <value>1600368864886</value>
->>>>>>> 2.2.0GA
-        </entry>
-        <entry>
-            <key>MODEL</key>
-            <value>0</value>
-        </entry>
-        <entry>
-            <key>TAG</key>
+            <value>1565016157741</value>
         </entry>
         <entry>
             <key>FILE_TYPE</key>
             <value>text</value>
         </entry>
         <entry>
-            <key>MANUFACTURER</key>
-            <value>0</value>
+            <key>TAG</key>
         </entry>
         <entry>
             <key>TYPE</key>
-            <value>FILE</value>
+            <value>UPLOAD</value>
         </entry>
         <entry>
             <key>COMMENT</key>

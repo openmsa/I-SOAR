@@ -1,6 +1,6 @@
 <ObjectDefinition>
   <variables frozen="0">
-    <variable displayName="Aws Region" name="params.aws_region" startIncrement="0" type="Device" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="true" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" isMandatory="true" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Aws Region" name="params.aws_region" startIncrement="0" type="Device" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="true" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <sdTypes>
         <sdTypes manId="17010301" modId="17010301"/>
       </sdTypes>
@@ -10,29 +10,17 @@
         <class>vpc</class>
       </classes>
     </variable>
-    <variable displayName="Url Ip Provider" name="params.url_IP_provider" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="3" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" isMandatory="true" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Url Ip Provider" name="params.url_IP_provider" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="3" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <values>
-        <values displayValue="http://10.31.1.20/demo/isoar/IP_list_2.txt">http://10.31.1.20/demo/isoar/IP_list_2.txt</values>
-        <values displayValue="http://10.31.1.20/demo/isoar/IP_list_1.txt">http://10.31.1.20/demo/isoar/IP_list_1.txt</values>
-        <values displayValue="http://10.31.1.20/demo/isoar/long_IP_list.txt">http://10.31.1.20/demo/isoar/long_IP_list.txt</values>
-        <values displayValue="http://10.31.1.20/demo/isoar/single_IP.txt">http://10.31.1.20/demo/isoar/single_IP.txt</values>
+        <values displayValue="http://10.31.1.20/demo/isoar/IP_list_2.txt">http://localhost/demo/isoar/IP_list_2.txt</values>
+        <values displayValue="http://10.31.1.20/demo/isoar/IP_list_1.txt">http://localhost/demo/isoar/IP_list_1.txt</values>
+        <values displayValue="http://10.31.1.20/demo/isoar/long_IP_list.txt">http://localhost/demo/isoar/long_IP_list.txt</values>
+        <values displayValue="http://10.31.1.20/demo/isoar/single_IP.txt">http://localhost/demo/isoar/single_IP.txt</values>
       </values>
     </variable>
-    <variable displayName="Ticketing Ip" name="params.ticketing_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" default="10.31.1.168:8080" isMandatory="true" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <values>
-        <values>10.31.1.168:8080</values>
-      </values>
-    </variable>
-    <variable displayName="Ticketing Login" name="params.ticketing_login" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="8" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" default="demo_user" isMandatory="true" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <values>
-        <values>demo_user</values>
-      </values>
-    </variable>
-    <variable displayName="Ticketing Pwd" name="params.ticketing_pwd" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="9" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" default="demo_user" isMandatory="true" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <values>
-        <values>demo_user</values>
-      </values>
-    </variable>
+    <variable displayName="Ticketing Ip" name="params.ticketing_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" default="10.31.1.168:8080" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Ticketing Login" name="params.ticketing_login" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="8" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" default="demo_user" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Ticketing Pwd" name="params.ticketing_pwd" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="9" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" default="demo_user" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
   <process name="Process/I-SOAR/AWS/Automated-ACL-Management/Process_initialize">

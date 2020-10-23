@@ -10,8 +10,8 @@ require_once '/opt/fmc_repository/Process/Reference/Common/common.php';
  */
 function list_args()
 {
-  create_var_def('aws_region', 'Device');
-  create_var_def('vpc_id', 'OBMFRef');
+  create_var_def('aws_region', 'String');
+  create_var_def('vpc_id', 'String');
 }
 
 task_success('Task OK');
