@@ -17,6 +17,10 @@ function list_args()
 
 }
 
+if (!isset($context['ticketing_ip'])) {
+  task_warning("No IP address provided for the JIRA server");
+}
+
 
 /*
 {
